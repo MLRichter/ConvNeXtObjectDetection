@@ -21,7 +21,7 @@ class Block(nn.Module):
     (1) DwConv -> LayerNorm (channels_first) -> 1x1 Conv -> GELU -> 1x1 Conv; all in (N, C, H, W)
     (2) DwConv -> Permute to (N, H, W, C); LayerNorm (channels_last) -> Linear -> GELU -> Linear; Permute back
     We use (2) as we find it slightly faster in PyTorch
-
+    
     Args:
         dim (int): Number of input channels.
         drop_path (float): Stochastic depth rate. Default: 0.0
@@ -169,7 +169,7 @@ class LayerNorm(nn.Module):
         if self.data_format not in ["channels_last", "channels_first"]:
             raise NotImplementedError 
         self.normalized_shape = (normalized_shape, )
-
+    
     def forward(self, x):
         if self.data_format == "channels_last":
             return F.layer_norm(x, self.normalized_shape, self.weight, self.bias, self.eps)

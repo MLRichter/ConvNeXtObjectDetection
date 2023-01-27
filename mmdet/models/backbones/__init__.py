@@ -12,10 +12,9 @@ from .ssd_vgg import SSDVGG
 from .trident_resnet import TridentResNet
 from .swin_transformer import SwinTransformer
 from .convnext import ConvNeXt
-from .convnext import *
 
-#__all__ = [
-#    'RegNet', 'ResNet', 'ResNetV1d', 'ResNeXt', 'SSDVGG', 'HRNet', 'Res2Net',
-#    'HourglassNet', 'DetectoRS_ResNet', 'DetectoRS_ResNeXt', 'Darknet',
-#    'ResNeSt', 'TridentResNet', 'SwinTransformer', 'ConvNeXt'
-#]
+__all__ = [
+    'RegNet', 'ResNet', 'ResNetV1d', 'ResNeXt', 'SSDVGG', 'HRNet', 'Res2Net',
+    'HourglassNet', 'DetectoRS_ResNet', 'DetectoRS_ResNeXt', 'Darknet',
+    'ResNeSt', 'TridentResNet', 'SwinTransformer', 'ConvNeXt'
+]
