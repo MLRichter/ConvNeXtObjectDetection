@@ -53,6 +53,12 @@ class Block(nn.Module):
         x = input + self.drop_path(x)
         return x
 
+
+print("THIS WAS EXECUTED")
+print("THIS WAS EXECUTED")
+print("THIS WAS EXECUTED")
+print("THIS WAS EXECUTED")
+
 @BACKBONES.register_module()
 class ConvNeXt(nn.Module):
     r""" ConvNeXt

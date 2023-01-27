@@ -36,7 +36,6 @@ def build(cfg, registry, default_args=None):
 
 def build_backbone(cfg):
     """Build backbone."""
-    print(BACKBONES)
     return build(cfg, BACKBONES)
 
 
