@@ -18,6 +18,7 @@ model = dict(
         drop_path_rate=0.2,
         layer_scale_init_value=1e-6,
         out_indices=[0, 1, 2, 3],
+        stride=4
     ),
     neck=dict(
         type='FPN',
